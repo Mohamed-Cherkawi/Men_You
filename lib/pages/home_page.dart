@@ -73,7 +73,12 @@ class HomePage extends StatelessWidget {
           ]
         ),
         child: FloatingActionButton(
-          onPressed: () {  },
+          onPressed: () {
+            Navigator.pushNamed(
+                context,
+                'cartPage'
+            );
+          },
           backgroundColor: Colors.white,
           child: const Icon(
               CupertinoIcons.cart,

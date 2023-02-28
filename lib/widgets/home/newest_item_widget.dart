@@ -7,9 +7,9 @@ import '../../util/popular_item.util.dart';
 
 class NewestItemWidget extends StatelessWidget {
   final List<PopularItemData> items = [
-    PopularItemData('biryani', 'Spaghetti Chicken', "You Don't Wanna Miss This One", 15,0),
-    PopularItemData('drink', 'CocaCola Lemonade', 'Enjoy The Moment', 4 , 0),
-    PopularItemData('tacos', 'Tacos', 'Delicious Tacos multi sauces', 16,0),
+    PopularItemData('biryani', 'Spaghetti Chicken', "You Don't Wanna Miss This One", 15,0,0),
+    PopularItemData('drink', 'CocaCola Lemonade', 'Enjoy The Moment', 4 , 0,0),
+    PopularItemData('tacos', 'Tacos', 'Delicious Tacos multi sauces', 16,0,0),
   ];
 
   @override

@@ -1,7 +1,9 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:men_you/widgets/Home/categories_widget.dart';
 import 'package:men_you/widgets/Home/search_field_widget.dart';
 
+import '../widgets/drawer_widget.dart';
 import '../widgets/home/app_bar_widget.dart';
 import '../widgets/home/newest_item_widget.dart';
 import '../widgets/home/popular_items_widget.dart';
@@ -56,6 +58,30 @@ class HomePage extends StatelessWidget {
             NewestItemWidget(),
           ],
         ),
+      // Drawer
+      drawer: DrawerWidget(),
+      floatingActionButton: Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(20),
+          boxShadow: [
+            BoxShadow(
+                color: Colors.grey.withOpacity(0.5),
+                spreadRadius: 2,
+                blurRadius: 10,
+                offset: const Offset(0,3)
+            ),
+          ]
+        ),
+        child: FloatingActionButton(
+          onPressed: () {  },
+          backgroundColor: Colors.white,
+          child: const Icon(
+              CupertinoIcons.cart,
+              size: 28,
+              color: Colors.red,
+          ),
+        ),
+      ),
     );
   }
 }

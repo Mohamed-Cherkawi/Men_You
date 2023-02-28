@@ -26,7 +26,9 @@ class SinglePopularItem extends StatelessWidget {
               )
             ]),
         child: Padding(
-          padding:  EdgeInsets.symmetric(horizontal: item.edgeInsetsSymetric),
+          padding:  EdgeInsets.symmetric(
+              horizontal: item.edgeInsetsSymetric
+          ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [

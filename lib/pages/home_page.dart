@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:men_you/widgets/categories_widget.dart';
-import 'package:men_you/widgets/search_field_widget.dart';
+import 'package:men_you/widgets/Home/categories_widget.dart';
+import 'package:men_you/widgets/Home/search_field_widget.dart';
 
-import '../widgets/app_bar_widget.dart';
-import '../widgets/popular_items_widget.dart';
+import '../widgets/home/app_bar_widget.dart';
+import '../widgets/home/newest_item_widget.dart';
+import '../widgets/home/popular_items_widget.dart';
+
 
 class HomePage extends StatelessWidget {
   @override
@@ -38,7 +40,20 @@ class HomePage extends StatelessWidget {
               ),
             ),
             // Popular Items Widget
-            PopularItemsWidget()
+            PopularItemsWidget(),
+            const Padding(
+              padding: EdgeInsets.only(top: 20 , left: 10),
+              child: Text(
+                'Newest',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20,
+                ),
+              ),
+            ),
+
+            // Newest Item Widget
+            NewestItemWidget(),
           ],
         ),
     );

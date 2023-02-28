@@ -26,7 +26,7 @@ class SinglePopularItem extends StatelessWidget {
               )
             ]),
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 10),
+          padding:  EdgeInsets.symmetric(horizontal: item.edgeInsetsSymetric),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -54,6 +54,7 @@ class SinglePopularItem extends StatelessWidget {
               ),
               const SizedBox(height: 12),
               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children:  [
                   Text(
                     "\$ ${item.itemPrice}",
@@ -62,7 +63,11 @@ class SinglePopularItem extends StatelessWidget {
                         color: Colors.red,
                         fontWeight: FontWeight.bold
                     ),
-                  )
+                  ),
+                  const Icon(
+                    Icons.favorite_border,
+                    color: Colors.red,
+                    size: 16,)
                 ],
               )
             ],

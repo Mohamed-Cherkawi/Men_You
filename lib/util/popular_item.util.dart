@@ -3,7 +3,8 @@ class PopularItemData {
   final String itemTitle;
   final String itemDescription;
   final int itemPrice;
+  final double edgeInsetsSymetric;
 
    PopularItemData(
-      this.imageFileName, this.itemTitle, this.itemDescription, this.itemPrice);
+      this.imageFileName, this.itemTitle, this.itemDescription, this.itemPrice, this.edgeInsetsSymetric);
 }
